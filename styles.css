@@ -142,10 +142,8 @@
   }
 
   section {
-    min-height: 100vh;
-    min-height: 100dvh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 1.5rem 0;
   }
 
@@ -187,8 +185,6 @@
   #contatos {
     background: #0d0d0d;
     color: #f5f5f5;
-    align-items: flex-start;
-    padding-top: 4rem;
   }
 
   #contatos .section-eyebrow {
@@ -358,6 +354,68 @@
     animation-delay: 2.3s;
   }
 
+  /* Badges de certificações */
+  .certifications-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.2rem;
+    max-width: 760px;
+    margin-top: 1rem;
+  }
+
+  .cert-badge {
+    width: 132px;
+    height: auto;
+    flex-shrink: 0;
+    color: var(--grena);
+    cursor: pointer;
+    transition: color 0.25s ease;
+  }
+
+  .cert-badge:hover {
+    color: var(--accent);
+  }
+
+  .cert-badge-wrap {
+    position: relative;
+    display: inline-block;
+  }
+
+  .cert-tooltip {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: var(--fg);
+    color: var(--bg);
+    font-family: "Space Mono", monospace;
+    font-size: 11px;
+    white-space: nowrap;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 20;
+  }
+
+  .cert-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--fg);
+  }
+
+  .cert-badge-wrap:hover .cert-tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
   .current-label {
     display: block;
     font-family: "Space Mono", monospace;
@@ -372,10 +430,10 @@
   .current-text {
     margin: 0;
     font-family: "Space Grotesk", sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.6;
     color: var(--fg);
-    max-width: 480px;
+    white-space: nowrap;
   }
 
   .fiemg {

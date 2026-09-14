@@ -61,8 +61,8 @@
         "exp.blipcoord.b2": "Atendimento a operadoras como Oi, Vivo, Claro, Tim, Movistar e Entel",
         "exp.blipcoord.b3": "Promovido de analista a coordenador ao longo do período",
         "contatos.eyebrow": "&gt;&gt; Contatos",
-        "contatos.title": "Vamos Conversar",
-        "contatos.text": "Caso queira bater um papo sobre tecnologia, processos de governança, oportunidades ou qualquer outro assunto estou à disposição."
+        "contatos.title": "Vamos Conversar?",
+        "contatos.text": "Se quiser bater um papo sobre tecnologia, processos de governança, oportunidades ou qualquer outro assunto estou à disposição."
       },
       en: {
         "nav.home": "Home",
@@ -119,7 +119,7 @@
         "exp.blipcoord.b2": "Supporting carriers such as Oi, Vivo, Claro, Tim, Movistar and Entel",
         "exp.blipcoord.b3": "Promoted from analyst to coordinator over the period",
         "contatos.eyebrow": "&gt;&gt; Contact",
-        "contatos.title": "Let's Talk",
+        "contatos.title": "Let's Talk?",
         "contatos.text": "If you'd like to chat about technology, governance processes, opportunities, or anything else, feel free to reach out."
       }
     };
@@ -183,7 +183,10 @@
         const targetId = item.getAttribute("data-target");
         const targetEl = document.getElementById(targetId);
         if (targetEl) {
-          targetEl.scrollIntoView({ behavior: "smooth" });
+          const navHeight = document.querySelector(".site-nav").offsetHeight;
+          const targetPosition =
+            targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight;
+          window.scrollTo({ top: targetPosition, behavior: "smooth" });
         }
       });
     });

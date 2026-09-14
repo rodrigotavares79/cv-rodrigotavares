@@ -19,13 +19,18 @@
 
   <div class="page">
     <nav class="site-nav">
-      <div class="page-inner">
+      <div class="page-inner nav-inner">
+        <div class="lang-switch" id="langSwitch">
+          <button class="lang-btn active" data-lang="pt">PT</button>
+          <span class="lang-sep">/</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
         <div class="nav-list-wrap">
           <ul class="nav-list" id="navList">
-            <li><button class="nav-item active" data-target="home">Home</button></li>
-            <li><button class="nav-item" data-target="sobre">Sobre Mim</button></li>
-            <li><button class="nav-item" data-target="experiencia">Experiência</button></li>
-            <li><button class="nav-item" data-target="contatos">Contatos</button></li>
+            <li><button class="nav-item active" data-target="home" data-i18n="nav.home">Home</button></li>
+            <li><button class="nav-item" data-target="sobre" data-i18n="nav.sobre">Sobre Mim</button></li>
+            <li><button class="nav-item" data-target="experiencia" data-i18n="nav.experiencia">Experiência</button></li>
+            <li><button class="nav-item" data-target="contatos" data-i18n="nav.contatos">Contatos</button></li>
           </ul>
           <span class="nav-indicator" id="navIndicator"></span>
         </div>
@@ -40,47 +45,47 @@
             <h1 class="name-large" id="name2"></h1>
 
             <div class="hero-role">
-              <span class="role-text">GRC &amp; Segurança da Informação</span>
+              <span class="role-text" data-i18n="hero.role">GRC &amp; Segurança da Informação</span>
             </div>
           </div>
 
           <div class="hero-meta">
             <div class="meta-group">
-              <span class="meta-label">Localização</span>
-              <span class="meta-value">Brasil</span>
+              <span class="meta-label" data-i18n="hero.location.label">Localização</span>
+              <span class="meta-value" data-i18n="hero.location.value">Brasil</span>
             </div>
             <div class="meta-group">
-              <span class="meta-label">Experiência</span>
-              <span class="meta-value">20+ Anos</span>
+              <span class="meta-label" data-i18n="hero.experience.label">Experiência</span>
+              <span class="meta-value" data-i18n="hero.experience.value">20+ Anos</span>
             </div>
           </div>
         </div>
 
         <div class="current-block">
-          <span class="current-label">Atualmente</span>
-          <p class="current-text">Desenvolvendo processos de Governança de SI e Riscos na <span class="fiemg">FIEMG</span>.</p>
+          <span class="current-label" data-i18n="current.label">Atualmente</span>
+          <p class="current-text" data-i18n="current.text">Desenvolvendo processos de Governança de SI e Riscos na <span class="fiemg">FIEMG</span>.</p>
         </div>
       </div>
     </section>
 
     <section id="sobre" class="placeholder-section">
       <div class="page-inner">
-        <span class="section-eyebrow">&gt;&gt; Sobre Mim</span>
-        <h2 class="section-title">Um Pouco Da Minha História</h2>
+        <span class="section-eyebrow" data-i18n="sobre.eyebrow">&gt;&gt; Sobre Mim</span>
+        <h2 class="section-title" data-i18n="sobre.title">Um Pouco Da Minha História</h2>
         <div class="section-title-bar"></div>
-        <p class="about-text">Eu trabalho com tecnologia há mais de 20 anos e, nesse tempo, passei por inúmeras experiências tanto com gestão quanto como analista.</p>
-        <p class="about-text">Sou formado em Informática no CES, em Juiz de Fora/MG, e me mudei para Belo Horizonte em 2006. Na capital mineira, acumulei boa experiência como gestor, principalmente na <span class="company">BLIP</span>, com gestão de equipe de Suporte Técnico; na <span class="company">Stefanini</span>, com gerenciamento de contratos de prestação de serviços de TI e equipes de Service Desk, Infraestrutura e Governança; e na <span class="company">VOLL</span>, liderando um time de atendimento especializado no produto. Essas experiências contam mais de 10 anos.</p>
-        <p class="about-text">Como analista, trabalhei com BI (Business Intelligence) na <span class="company">BLIP</span>, Gerenciamento de Projetos de Infraestrutura na <span class="company">IT One</span>, Auditoria de TI no grupo <span class="company">Oncoclínicas</span> e, atualmente, estou desenvolvendo processos de Governança de SI e Riscos na <span class="company">FIEMG</span>.</p>
-        <p class="about-text">Sou Pós-Graduado em Banco de Dados e Cibersegurança e Governança pela PUC Minas e tenho diversas certificações.</p>
-        <p class="about-text">Tenho boa fluência na língua inglesa para conversar, escrever e ler, entendo um pouco de espanhol e sou apaixonado pela língua francesa.</p>
-        <p class="about-text">Fora isso tudo, dedico meu tempo livre à minha família, ao violão e ao Botafogo.</p>
+        <p class="about-text" data-i18n="sobre.p1">Eu trabalho com tecnologia há mais de 20 anos e, nesse tempo, passei por inúmeras experiências tanto com gestão quanto como analista.</p>
+        <p class="about-text" data-i18n="sobre.p2">Sou formado em Informática no CES, em Juiz de Fora/MG, e me mudei para Belo Horizonte em 2006. Na capital mineira, acumulei boa experiência como gestor, principalmente na <span class="company">BLIP</span>, com gestão de equipe de Suporte Técnico; na <span class="company">Stefanini</span>, com gerenciamento de contratos de prestação de serviços de TI e equipes de Service Desk, Infraestrutura e Governança; e na <span class="company">VOLL</span>, liderando um time de atendimento especializado no produto. Essas experiências contam mais de 10 anos.</p>
+        <p class="about-text" data-i18n="sobre.p3">Como analista, trabalhei com BI (Business Intelligence) na <span class="company">BLIP</span>, Gerenciamento de Projetos de Infraestrutura na <span class="company">IT One</span>, Auditoria de TI no grupo <span class="company">Oncoclínicas</span> e, atualmente, estou desenvolvendo processos de Governança de SI e Riscos na <span class="company">FIEMG</span>.</p>
+        <p class="about-text" data-i18n="sobre.p4">Sou Pós-Graduado em Banco de Dados e Cibersegurança e Governança pela PUC Minas e tenho diversas certificações.</p>
+        <p class="about-text" data-i18n="sobre.p5">Tenho boa fluência na língua inglesa para conversar, escrever e ler, entendo um pouco de espanhol e sou apaixonado pela língua francesa.</p>
+        <p class="about-text" data-i18n="sobre.p6">Fora isso tudo, dedico meu tempo livre à minha família, ao violão e ao Botafogo.</p>
       </div>
     </section>
 
     <section id="experiencia" class="placeholder-section">
       <div class="page-inner">
-        <span class="section-eyebrow">&gt;&gt; Experiência</span>
-        <h2 class="section-title">Meu Histórico Profissional</h2>
+        <span class="section-eyebrow" data-i18n="experiencia.eyebrow">&gt;&gt; Experiência</span>
+        <h2 class="section-title" data-i18n="experiencia.title">Meu Histórico Profissional</h2>
         <div class="section-title-bar"></div>
 
         <div class="experience-timeline" id="experienceTimeline">
@@ -88,14 +93,14 @@
           <div class="experience-item">
             <button class="experience-header">
               <span class="experience-years">2025—Atual</span>
-              <span class="experience-role">Analista de Segurança da Informação, FIEMG</span>
+              <span class="experience-role" data-i18n="exp.fiemg.role">Analista de Segurança da Informação, FIEMG</span>
               <span class="experience-toggle">[+]</span>
             </button>
             <div class="experience-details">
               <ul class="experience-list">
-                <li>Condução de análises de risco para identificação de vulnerabilidades e fatores críticos</li>
-                <li>Elaboração de Políticas de Segurança da Informação (PSI) baseadas em ISO 27001, NIST e CIS Controls</li>
-                <li>Relatórios e dashboards de KPIs/KRIs para apoiar decisões em Comitês de Segurança</li>
+                <li data-i18n="exp.fiemg.b1">Condução de análises de risco para identificação de vulnerabilidades e fatores críticos</li>
+                <li data-i18n="exp.fiemg.b2">Elaboração de Políticas de Segurança da Informação (PSI) baseadas em ISO 27001, NIST e CIS Controls</li>
+                <li data-i18n="exp.fiemg.b3">Relatórios e dashboards de KPIs/KRIs para apoiar decisões em Comitês de Segurança</li>
               </ul>
             </div>
           </div>
@@ -103,14 +108,14 @@
           <div class="experience-item">
             <button class="experience-header">
               <span class="experience-years">2024—2025</span>
-              <span class="experience-role">Auditor Interno e Especialista em Governança de TI, Zummit (Oncoclínicas&amp;Co)</span>
+              <span class="experience-role" data-i18n="exp.zummit.role">Auditor Interno e Especialista em Governança de TI, Zummit (Oncoclínicas&amp;Co)</span>
               <span class="experience-toggle">[+]</span>
             </button>
             <div class="experience-details">
               <ul class="experience-list">
-                <li>Liderança de projetos de auditoria em TI e Segurança da Informação</li>
-                <li>Ponto focal em auditorias externas conduzidas por Deloitte e Grant Thornton</li>
-                <li>Gestão de mudanças, problemas e incidentes críticos como Especialista em Governança de TI</li>
+                <li data-i18n="exp.zummit.b1">Liderança de projetos de auditoria em TI e Segurança da Informação</li>
+                <li data-i18n="exp.zummit.b2">Ponto focal em auditorias externas conduzidas por Deloitte e Grant Thornton</li>
+                <li data-i18n="exp.zummit.b3">Gestão de mudanças, problemas e incidentes críticos como Especialista em Governança de TI</li>
               </ul>
             </div>
           </div>
@@ -118,14 +123,14 @@
           <div class="experience-item">
             <button class="experience-header">
               <span class="experience-years">2022—2024</span>
-              <span class="experience-role">Coordenador de Serviços de TI, VOLL</span>
+              <span class="experience-role" data-i18n="exp.voll.role">Coordenador de Serviços de TI, VOLL</span>
               <span class="experience-toggle">[+]</span>
             </button>
             <div class="experience-details">
               <ul class="experience-list">
-                <li>Estruturação da equipe de suporte a produtos com base em ITIL 4 e COBIT</li>
-                <li>Gestão de incidentes, problemas, mudanças, catálogo de serviços e SLAs</li>
-                <li>Relatórios executivos e acompanhamento de metas via metodologia OKRs</li>
+                <li data-i18n="exp.voll.b1">Estruturação da equipe de suporte a produtos com base em ITIL 4 e COBIT</li>
+                <li data-i18n="exp.voll.b2">Gestão de incidentes, problemas, mudanças, catálogo de serviços e SLAs</li>
+                <li data-i18n="exp.voll.b3">Relatórios executivos e acompanhamento de metas via metodologia OKRs</li>
               </ul>
             </div>
           </div>
@@ -133,14 +138,14 @@
           <div class="experience-item">
             <button class="experience-header">
               <span class="experience-years">2022—2023</span>
-              <span class="experience-role">Analista de Segurança da Informação, FORM4T</span>
+              <span class="experience-role" data-i18n="exp.form4t.role">Analista de Segurança da Informação, FORM4T</span>
               <span class="experience-toggle">[+]</span>
             </button>
             <div class="experience-details">
               <ul class="experience-list">
-                <li>Avaliações de risco baseadas na ISO/IEC 27005</li>
-                <li>Apoio a clientes na implementação de SGSI conforme ISO/IEC 27001</li>
-                <li>Programas de conscientização em segurança e definição de KPIs</li>
+                <li data-i18n="exp.form4t.b1">Avaliações de risco baseadas na ISO/IEC 27005</li>
+                <li data-i18n="exp.form4t.b2">Apoio a clientes na implementação de SGSI conforme ISO/IEC 27001</li>
+                <li data-i18n="exp.form4t.b3">Programas de conscientização em segurança e definição de KPIs</li>
               </ul>
             </div>
           </div>
@@ -148,14 +153,14 @@
           <div class="experience-item">
             <button class="experience-header">
               <span class="experience-years">2018—2022</span>
-              <span class="experience-role">Gerente de Projetos de Infraestrutura e Governança, IT-One</span>
+              <span class="experience-role" data-i18n="exp.itone.role">Gerente de Projetos de Infraestrutura e Governança, IT-One</span>
               <span class="experience-toggle">[+]</span>
             </button>
             <div class="experience-details">
               <ul class="experience-list">
-                <li>Gerenciamento de projetos de redes e segurança (VMware, Palo Alto)</li>
-                <li>Conformidade com LGPD e GDPR orientada pela ISO 27001</li>
-                <li>Gestão de vulnerabilidades, riscos e mudanças em ambiente ITSM (ServiceNow)</li>
+                <li data-i18n="exp.itone.b1">Gerenciamento de projetos de redes e segurança (VMware, Palo Alto)</li>
+                <li data-i18n="exp.itone.b2">Conformidade com LGPD e GDPR orientada pela ISO 27001</li>
+                <li data-i18n="exp.itone.b3">Gestão de vulnerabilidades, riscos e mudanças em ambiente ITSM (ServiceNow)</li>
               </ul>
             </div>
           </div>
@@ -163,14 +168,14 @@
           <div class="experience-item">
             <button class="experience-header">
               <span class="experience-years">2014—2018</span>
-              <span class="experience-role">Gerente Operacional e de Serviços, Stefanini Brasil</span>
+              <span class="experience-role" data-i18n="exp.stefanini.role">Gerente Operacional e de Serviços, Stefanini Brasil</span>
               <span class="experience-toggle">[+]</span>
             </button>
             <div class="experience-details">
               <ul class="experience-list">
-                <li>Liderança de equipes de field services, service desk, cibersegurança e NOC</li>
-                <li>Elaboração de catálogos de serviços, negociação de SLAs e gestão de contratos</li>
-                <li>Principais clientes: ArcelorMittal, Alcoa, Novo Nordisk, BH Airport</li>
+                <li data-i18n="exp.stefanini.b1">Liderança de equipes de field services, service desk, cibersegurança e NOC</li>
+                <li data-i18n="exp.stefanini.b2">Elaboração de catálogos de serviços, negociação de SLAs e gestão de contratos</li>
+                <li data-i18n="exp.stefanini.b3">Principais clientes: ArcelorMittal, Alcoa, Novo Nordisk, BH Airport</li>
               </ul>
             </div>
           </div>
@@ -178,14 +183,14 @@
           <div class="experience-item">
             <button class="experience-header">
               <span class="experience-years">2012—2013</span>
-              <span class="experience-role">Analista de Business Intelligence, Take Blip</span>
+              <span class="experience-role" data-i18n="exp.blipbi.role">Analista de Business Intelligence, Take Blip</span>
               <span class="experience-toggle">[+]</span>
             </button>
             <div class="experience-details">
               <ul class="experience-list">
-                <li>Atendimento de tickets relacionados a problemas em relatórios</li>
-                <li>Desenvolvimento de scripts e consultas SQL</li>
-                <li>Criação de dashboards executivos</li>
+                <li data-i18n="exp.blipbi.b1">Atendimento de tickets relacionados a problemas em relatórios</li>
+                <li data-i18n="exp.blipbi.b2">Desenvolvimento de scripts e consultas SQL</li>
+                <li data-i18n="exp.blipbi.b3">Criação de dashboards executivos</li>
               </ul>
             </div>
           </div>
@@ -193,14 +198,14 @@
           <div class="experience-item">
             <button class="experience-header">
               <span class="experience-years">2006—2012</span>
-              <span class="experience-role">Coordenador de Suporte Técnico, Take Blip</span>
+              <span class="experience-role" data-i18n="exp.blipcoord.role">Coordenador de Suporte Técnico, Take Blip</span>
               <span class="experience-toggle">[+]</span>
             </button>
             <div class="experience-details">
               <ul class="experience-list">
-                <li>Liderança de equipe de Service Desk para clientes externos</li>
-                <li>Atendimento a operadoras como Oi, Vivo, Claro, Tim, Movistar e Entel</li>
-                <li>Promovido de analista a coordenador ao longo do período</li>
+                <li data-i18n="exp.blipcoord.b1">Liderança de equipe de Service Desk para clientes externos</li>
+                <li data-i18n="exp.blipcoord.b2">Atendimento a operadoras como Oi, Vivo, Claro, Tim, Movistar e Entel</li>
+                <li data-i18n="exp.blipcoord.b3">Promovido de analista a coordenador ao longo do período</li>
               </ul>
             </div>
           </div>
@@ -211,10 +216,10 @@
 
     <section id="contatos" class="placeholder-section">
       <div class="page-inner">
-        <span class="section-eyebrow">&gt;&gt; Contatos</span>
-        <h2 class="section-title">Vamos Conversar?</h2>
+        <span class="section-eyebrow" data-i18n="contatos.eyebrow">&gt;&gt; Contatos</span>
+        <h2 class="section-title" data-i18n="contatos.title">Vamos Conversar</h2>
         <div class="section-title-bar"></div>
-        <p class="contact-text">Se quiser bater um papo sobre tecnologia, processos de governança, oportunidades ou qualquer outro assunto estou à disposição.</p>
+        <p class="contact-text" data-i18n="contatos.text">Caso queira bater um papo sobre tecnologia, processos de governança, oportunidades ou qualquer outro assunto estou à disposição.</p>
         <div class="contact-link">
           <span class="contact-link-label">Linkedin</span>
           <a href="https://www.linkedin.com/in/tavares-rodrigo/" target="_blank" rel="noopener" class="contact-link-url">/in/tavares-rodrigo/</a>
